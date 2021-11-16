@@ -35,12 +35,17 @@ const winingConditions = [
 ];
 
 function handleResultValidation() {
+    console.log(gameState);
+
     let roundWon = false;
     for (let i = 0; i <= 7; i++) {
         const winCondition = winingConditions[i];
         let a = gameState[winCondition[0]];
         let b = gameState[winCondition[1]];
         let c = gameState[winCondition[2]];
+        console.log(a);
+        console.log(b);
+        console.log(c);
         if (a === '' || b === '' || c === '') {
             continue;
         }
